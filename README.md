@@ -13,9 +13,9 @@ The text file contains a list of number and word in the format:
 ```
 There is an arbitrary number of entries in the file. The program first creates a key-value map of the number to its corresponding
 string, then it decodes the message by extracting the string value where the first key starts at 1 then follows the pattern where
-the next key is the previous key + 1, which is depicted as the below formula:
+the next key is the previous increment + 1 (where increment starts at 2), which is depicted as the below formula:
 
-<img src="https://latex.codecogs.com/gif.latex? String(k) = \frac{(k+2)(k+3)}{2}" /> 
+<img src="https://latex.codecogs.com/gif.latex?key_n=\frac{(n+2)(n+3)}{2}" />
 
 Then, it appends each string value to a result string to be printed out to the console.
 
